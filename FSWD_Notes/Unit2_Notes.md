@@ -270,3 +270,177 @@ $(document).ready(function() {
 ```
 
 Selectors are powerful tools in web development, enabling developers to target specific elements and apply styles or functionality with precision. Understanding selectors is essential for effective styling and DOM manipulation in CSS and jQuery.
+
+
+
+# Form Events in jQuery
+
+Form events are events that occur when a user interacts with a form element. They are triggered when the user submits the form, changes the value of an element, focuses an element, or loses focus.
+
+jQuery simplifies handling form events, enabling developers to attach event handlers to form elements easily. Here are some common form events in jQuery:
+
+1. **submit**: Triggered when a form is submitted.
+2. **change**: Triggered when the value of an element is changed.
+3. **focus**: Triggered when an element gains focus.
+4. **blur**: Triggered when an element loses focus.
+5. **input**: Triggered when the value of an `<input>` element is changed.
+
+### Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Form Events</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $('#myForm').on('submit', function(event) {
+                alert('Form submitted!');
+                event.preventDefault();
+            });
+
+            $('#name').on('focus', function() {
+                $(this).css('background-color', 'yellow');
+            });
+
+            $('#name').on('blur', function() {
+                $(this).css('background-color', '');
+            });
+
+            $('#email').on('change', function() {
+                alert('Email changed to: ' + $(this).val());
+            });
+        });
+    </script>
+</body>
+</html>
+```
+
+<p align="center">
+    <img src="img/jQuery_Form_Events.gif" alt="jQuery Form Events" width="400" height="300">
+</p>
+
+In this example:
+- When the form is submitted, an alert is shown and the default form submission is prevented.
+- When the name input field gains focus, its background color changes to yellow.
+- When the name input field loses focus, its background color reverts to the original.
+- When the email input field's value is changed, an alert displays the new email.
+
+# DOM Manipulation
+
+DOM (Document Object Model) manipulation is a core aspect of web development, allowing developers to dynamically update the content and structure of web pages. jQuery simplifies DOM manipulation by providing a wide range of methods to interact with the DOM elements.
+
+1. **.html()**: Gets or sets the HTML content of an element.
+2. **.text()**: Gets or sets the text content of an element.
+3. **.val()**: Gets or sets the value of form elements.
+4. **.append()**: Inserts content at the end of the selected elements.
+5. **.prepend()**: Inserts content at the beginning of the selected elements.
+6. **.attr()**: Gets or sets attributes of elements.
+7. **.css()**: Gets or sets CSS properties.
+
+### Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="content">
+        <p>Original Content</p>
+    </div>
+    <button id="changeContent">Change Content</button>
+
+    <script>
+        $(document).ready(function() {
+            $('#changeContent').on('click', function() {
+                $('#content').html('<p>New Content</p>');
+            });
+        });
+    </script>
+</body>
+</html>
+```
+
+<p align="center">
+  <img src="img/DOM_Manipulation.gif" alt="DOM Manipulation with jQuery" width="400" height="300">
+</p>
+
+In this example, clicking the button changes the content inside the `#content` div to "New Content".
+
+
+
+# Client-Side Form Validation with JavaScript
+
+Client-side form validation is a core aspect of web development, allowing developers to validate form data before submitting it to a server. This helps to ensure that the data is correct and secure. JavaScript is commonly used for client-side form validation due to its ability to interact with the DOM and handle user input events.
+
+Here's a simple JavaScript code snippet for validating a form on the client side:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            if (name === '') {
+                alert('Name must be filled out');
+                return false;
+            }
+            if (email === '') {
+                alert('Email must be filled out');
+                return false;
+            }
+            // Simple email validation regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Invalid email format');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
+```
+
+<p align="center">
+  <img src="img/validate_Form.gif" alt="Validate Form" width="400" height="300" />
+</p>
+
+In this example:
+- The `validateForm` function checks if the name and email fields are filled out.
+- If either field is empty, it displays an alert and prevents form submission.
+- It also uses a simple regex to validate the email format.
