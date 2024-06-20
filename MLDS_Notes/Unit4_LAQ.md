@@ -399,9 +399,11 @@ Machine learning algorithms often calculate distances between data points (e.g.,
 
 ### Min-Max Scaling:
 Min-Max scaling is one of the simplest methods for rescaling data. It transforms features to a specified range, typically between 0 and 1. The formula for Min-Max scaling is:
+
 $$
 X_{scaled} = \frac{X - X_{min}}{X_{max} - X_{min}}
 $$
+
 where:
 - $X$ is the original feature value.
 - $X_{min}$ is the minimum value of $X$ in the dataset.
