@@ -28,6 +28,45 @@ To install Node.js and npm on your system, follow these steps:
 - **High Performance:** Node.js is built on the V8 JavaScript engine, which compiles JavaScript code to native machine code, resulting in high performance and low latency.
 - **Single Threaded, Event Loop:** Node.js employs a single-threaded event loop model, enabling handling of multiple concurrent connections efficiently without the overhead of thread management.
 
+# Built-in Modules in Node.js
+
+Built-in modules in Node.js are pre-installed libraries that provide essential functionality for Node.js applications. They are built-in to the Node.js runtime environment and can be used directly without installation. Some of the commonly used built-in modules include:
+
+- **fs:** This module provides a set of functions for interacting with the file system.
+- **path:** This module provides utilities for working with file and directory paths.
+- **os:** This module provides a set of functions for interacting with the operating system.
+- **http:** This module provides a set of functions for creating and interacting with HTTP requests and responses.
+- **url:** This module provides a set of functions for parsing and manipulating URLs.
+
+To interact with the built-in modules, you can use the `require()` function, which is a built-in Node.js function that allows you to import a module and access its exported functions. For example:
+
+```javascript
+const fs = require('fs');
+const path = require('path');
+const os = require('os');
+const http = require('http');
+const url = require('url');
+```
+
+Let us take an example of using the `fs` module to read a file:
+
+```javascript
+const fs = require('fs');
+
+fs.readFile('file.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
+
+```
+
+- The above code will read a file named `file.txt` from the current directory and print its contents to the console. 
+- The `fs.readFile()` function reads the contents of the file asynchronously and calls the callback function with the data once the operation is complete.
+
+
 # Template Engines in Node.js
 
 Template engines in Node.js are used to generate dynamic HTML content by combining HTML markup with data from a server-side source. They simplify the process of generating HTML pages dynamically by allowing developers to write templates with placeholders for dynamic content.
@@ -87,3 +126,21 @@ app.listen(3000, () => {
    - Access the server in a web browser by navigating to `http://localhost:3000`.
 
 Express.js simplifies the process of creating web servers in Node.js by providing a robust set of features, middleware, and conventions for handling HTTP requests and building RESTful APIs.
+
+
+# SQL Databases vs. MongoDB
+
+| Feature/Aspect                      | SQL Databases                                     | MongoDB                                                |
+|-------------------------------------|---------------------------------------------------|--------------------------------------------------------|
+| Data Storage                        | Uses tables with predefined schema and relations  | Stores data in flexible, schema-less documents (JSON)   |
+| Schema                               | Requires a predefined schema with tables and columns | Schema is dynamic; documents can have varying structures |
+| Query Language                      | Uses SQL (Structured Query Language) for querying | Uses a rich query language similar to JavaScript       |
+| Data Structure                      | Organized in tables with rows and columns         | Stores data in collections of JSON-like documents       |
+| Joins                                | Supports complex joins across tables              | No joins in traditional sense; supports aggregation framework |
+| Scalability                         | Vertical scaling is common (adding more resources to a single server) | Horizontal scaling is typical (adding more servers to distribute load) |
+| Performance                         | Well-suited for complex queries and transactions  | High performance for large volumes of data and high throughput |
+| Flexibility                         | Less flexible due to rigid schema requirements   | Highly flexible; documents can evolve over time         |
+| Transactions                        | ACID transactions supported for data integrity   | Transactions are supported, but with some limitations   |
+| Atomicity, Consistency, Isolation, Durability (ACID) | Ensures all transactions are processed reliably | Provides flexibility in ACID properties depending on configuration |
+| Use Cases                           | Best for structured data and complex queries     | Ideal for applications with constantly changing data    |
+| Development Complexity              | Often requires careful planning of schema design | Easier to develop and adapt due to schema-less nature   |
