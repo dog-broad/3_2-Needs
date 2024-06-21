@@ -342,7 +342,13 @@ In this example:
 
 # DOM Manipulation
 
+DOM (Document Object Model) refers to the structure and content of a web page. It is a programming interface that allows developers to manipulate the content, structure, and style of a web page.
+
+There are many instances where developers need to manipulate the DOM, i.e., change the content, structure, or style of a web page dynamically. This can be achieved using JavaScript or libraries like jQuery, which provide a wide range of methods for interacting with the DOM.
+
 DOM (Document Object Model) manipulation is a core aspect of web development, allowing developers to dynamically update the content and structure of web pages. jQuery simplifies DOM manipulation by providing a wide range of methods to interact with the DOM elements.
+
+Here are some commonly used methods in jQuery for DOM manipulation:
 
 1. **.html()**: Gets or sets the HTML content of an element.
 2. **.text()**: Gets or sets the text content of an element.
