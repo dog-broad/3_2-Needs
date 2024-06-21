@@ -323,3 +323,114 @@ observable.subscribe();
 ```
 
 In this example, an HTTP GET request is made using the `HttpClient` and the response is wrapped in an Observable. The Observable is then subscribed to, triggering the request.
+
+
+# Mouse Events in Angular
+
+AngularJS provides several directives to handle mouse events. These directives are used to execute custom behavior when a user interacts with elements using the mouse. Here are some of the key mouse events in AngularJS, along with detailed explanations and code snippets:
+
+### AngularJS Mouse Events
+
+1. **ng-click**
+   - **Description:** This directive is used to specify custom behavior when an element is clicked.
+   - **Usage:**
+     ```html
+     <button ng-click="handleClick()">Click Me</button>
+     ```
+   - **Controller Example:**
+     ```javascript
+     $scope.handleClick = function() {
+       console.log('Button clicked!');
+     };
+     ```
+
+2. **ng-dblclick**
+   - **Description:** This directive is used to specify custom behavior when an element is double-clicked.
+   - **Usage:**
+     ```html
+     <button ng-dblclick="handleDoubleClick()">Double Click Me</button>
+     ```
+   - **Controller Example:**
+     ```javascript
+     $scope.handleDoubleClick = function() {
+       console.log('Button double-clicked!');
+     };
+     ```
+
+3. **ng-mousedown**
+   - **Description:** This directive is used to specify custom behavior when a mouse button is pressed down over an element.
+   - **Usage:**
+     ```html
+     <div ng-mousedown="handleMouseDown()">Mouse Down on Me</div>
+     ```
+   - **Controller Example:**
+     ```javascript
+     $scope.handleMouseDown = function() {
+       console.log('Mouse button pressed down!');
+     };
+     ```
+
+4. **ng-mouseup**
+   - **Description:** This directive is used to specify custom behavior when a mouse button is released over an element.
+   - **Usage:**
+     ```html
+     <div ng-mouseup="handleMouseUp()">Mouse Up on Me</div>
+     ```
+   - **Controller Example:**
+     ```javascript
+     $scope.handleMouseUp = function() {
+       console.log('Mouse button released!');
+     };
+     ```
+
+5. **ng-mouseenter**
+   - **Description:** This directive is used to specify custom behavior when the mouse pointer enters an element.
+   - **Usage:**
+     ```html
+     <div ng-mouseenter="handleMouseEnter()">Mouse Enter on Me</div>
+     ```
+   - **Controller Example:**
+     ```javascript
+     $scope.handleMouseEnter = function() {
+       console.log('Mouse entered the element!');
+     };
+     ```
+
+6. **ng-mouseleave**
+   - **Description:** This directive is used to specify custom behavior when the mouse pointer leaves an element.
+   - **Usage:**
+     ```html
+     <div ng-mouseleave="handleMouseLeave()">Mouse Leave on Me</div>
+     ```
+   - **Controller Example:**
+     ```javascript
+     $scope.handleMouseLeave = function() {
+       console.log('Mouse left the element!');
+     };
+     ```
+
+7. **ng-mousemove**
+   - **Description:** This directive is used to specify custom behavior when the mouse pointer moves within an element.
+   - **Usage:**
+     ```html
+     <div ng-mousemove="handleMouseMove()">Move Mouse Over Me</div>
+     ```
+   - **Controller Example:**
+     ```javascript
+     $scope.handleMouseMove = function(event) {
+       console.log('Mouse moved within the element!', event);
+     };
+     ```
+
+8. **ng-mouseover**
+   - **Description:** This directive is used to specify custom behavior when the mouse pointer hovers over an element.
+   - **Usage:**
+     ```html
+     <div ng-mouseover="handleMouseOver()">Mouse Over Me</div>
+     ```
+   - **Controller Example:**
+     ```javascript
+     $scope.handleMouseOver = function() {
+       console.log('Mouse over the element!');
+     };
+     ```
