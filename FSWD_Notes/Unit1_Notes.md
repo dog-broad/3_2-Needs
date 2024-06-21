@@ -16,6 +16,39 @@ The Geolocation API is based on the W3C Geolocation Specification and is accesse
 
 The Geolocation API has various use cases, including location-based services, mapping applications, weather forecasts, local search, and personalized content delivery. However, it's important for developers to handle user privacy and security considerations responsibly, as accessing sensitive location information requires explicit user consent and adherence to privacy regulations.
 
+Example:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation API Example</title>
+    <script>
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        alert("Geolocation is not supported by this browser.");
+      }
+      
+      function showPosition(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        
+        document.getElementById("latitude").innerHTML = latitude;
+        document.getElementById("longitude").innerHTML = longitude;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Geolocation API Example</h1>
+    <p>This is an example of using the Geolocation API.</p>
+    <p>Please allow the browser to access your location.</p>
+    <p>Latitude: <span id="latitude"></span></p>
+    <p>Longitude: <span id="longitude"></span></p>
+  </body>
+</html>
+```
+
 # CSS Navbar
 
 A CSS navbar, or navigation bar, is a common UI component used in web design to provide navigation links for navigating a website. It typically appears at the top of the webpage and contains links to various sections or pages of the site.
