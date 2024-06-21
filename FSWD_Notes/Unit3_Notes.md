@@ -80,6 +80,189 @@ Template engines in Node.js are used to generate dynamic HTML content by combini
 
 4. **Mustache:** Mustache is a minimalistic template system with support for various programming languages, including JavaScript. It follows the principle of "logic-less" templates, focusing on simplicity and portability.
 
+Examples for each template engine in Node.js:
+
+### 1. EJS (Embedded JavaScript)
+
+#### Example:
+Install EJS:
+```bash
+npm install ejs
+```
+
+Create a simple EJS template (`views/example.ejs`):
+```html
+<!-- views/example.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Example</title>
+</head>
+<body>
+    <h1>Hello, <%= name %></h1>
+    <p>This is a simple EJS example.</p>
+</body>
+</html>
+```
+
+Using EJS in Node.js (`server.js`):
+```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Set EJS as the view engine
+app.set('view engine', 'ejs');
+
+// Render the EJS template
+app.get('/', (req, res) => {
+    res.render('example', { name: 'John' });
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
+```
+
+### 2. Pug (formerly Jade)
+
+#### Example:
+Install Pug:
+```bash
+npm install pug
+```
+
+Create a simple Pug template (`views/example.pug`):
+```pug
+// views/example.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Pug Example
+  body
+    h1 Hello, #{name}
+    p This is a simple Pug example.
+```
+
+Using Pug in Node.js (`server.js`):
+```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Set Pug as the view engine
+app.set('view engine', 'pug');
+
+// Render the Pug template
+app.get('/', (req, res) => {
+    res.render('example', { name: 'Jane' });
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
+```
+
+### 3. Handlebars
+
+#### Example:
+Install Handlebars:
+```bash
+npm install express-handlebars
+```
+
+Create a simple Handlebars template (`views/example.handlebars`):
+```handlebars
+<!-- views/example.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars Example</title>
+</head>
+<body>
+    <h1>Hello, {{name}}</h1>
+    <p>This is a simple Handlebars example.</p>
+</body>
+</html>
+```
+
+Using Handlebars in Node.js (`server.js`):
+```javascript
+const express = require('express');
+const exphbs  = require('express-handlebars');
+const app = express();
+const port = 3000;
+
+// Set Handlebars as the view engine
+app.engine('.hbs', exphbs({ extname: '.hbs' }));
+app.set('view engine', '.hbs');
+
+// Render the Handlebars template
+app.get('/', (req, res) => {
+    res.render('example', { name: 'Jake' });
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
+```
+
+### 4. Mustache
+
+#### Example:
+Install Mustache:
+```bash
+npm install mustache
+```
+
+Create a simple Mustache template (`views/example.mustache`):
+```html
+<!-- views/example.mustache -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustache Example</title>
+</head>
+<body>
+    <h1>Hello, {{name}}</h1>
+    <p>This is a simple Mustache example.</p>
+</body>
+</html>
+```
+
+Using Mustache in Node.js (`server.js`):
+```javascript
+const express = require('express');
+const mustacheExpress = require('mustache-express');
+const app = express();
+const port = 3000;
+
+// Register '.mustache' extension with the Mustache template engine
+app.engine('mustache', mustacheExpress());
+app.set('view engine', 'mustache');
+
+// Render the Mustache template
+app.get('/', (req, res) => {
+    res.render('example', { name: 'Mary' });
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
+```
+
 # Creating a Simple Server (Express)
 
 Express.js is a popular web application framework for Node.js, known for its simplicity, flexibility, and robust features. It provides a minimalist and unopinionated structure for building web servers and APIs.
