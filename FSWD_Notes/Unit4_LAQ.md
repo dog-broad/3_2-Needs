@@ -103,9 +103,38 @@ or
 ng g c component-name
 ```
 
-This will create:
-- A folder named after the component.
-- A TypeScript file for the component logic.
-- An HTML file for the template.
-- A CSS file for the styles.
-- A spec file for testing.
+- This command will create a new folder named `component-name` inside the `src/app` directory with the following files:
+  - `component-name.component.ts`: The TypeScript file containing the component's logic.
+  - `component-name.component.html`: The HTML template for the component.
+  - `component-name.component.css`: The CSS file for the component's styles.
+  - `component-name.component.spec.ts`: The test file for the component.
+
+**Component Files Explanation:**
+  - **component-name.component.ts:**
+   ```typescript
+   import { Component } from '@angular/core';
+
+   @Component({
+     selector: 'app-component-name',
+     templateUrl: './component-name.component.html',
+     styleUrls: ['./component-name.component.css']
+   })
+   export class ComponentNameComponent {
+     // Component logic goes here
+   }
+   ```
+
+  - **component-name.component.html:**
+   ```html
+   <p>
+     component-name works!
+   </p>
+   ```
+
+  - **component-name.component.css:**
+   ```css
+   /* Styles for the component */
+   ```
+
+  - **component-name.component.spec.ts:**
+   This file contains the test cases for the component.
