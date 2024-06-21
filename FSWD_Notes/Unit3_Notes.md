@@ -144,3 +144,51 @@ Express.js simplifies the process of creating web servers in Node.js by providin
 | Atomicity, Consistency, Isolation, Durability (ACID) | Ensures all transactions are processed reliably | Provides flexibility in ACID properties depending on configuration |
 | Use Cases                           | Best for structured data and complex queries     | Ideal for applications with constantly changing data    |
 | Development Complexity              | Often requires careful planning of schema design | Easier to develop and adapt due to schema-less nature   |
+
+
+# Middleware of Node MongoDB Driver
+
+### What is Middleware?
+
+Middleware functions are functions that have access to the request object (`req`), the response object (`res`), and the next middleware function in the application’s request-response cycle. These functions can perform various tasks, such as:
+
+*   Executing code
+*   Modifying the request and response objects
+*   Ending the request-response cycle
+*   Calling the next middleware function
+
+
+**Middleware in the Node MongoDB Driver:**
+
+Middleware in the context of the Node MongoDB driver is not as explicitly defined as in frameworks like Express. However, middleware functionality can be achieved using Mongoose, an ODM (Object Data Modeling) library for MongoDB and Node.js. Mongoose allows you to define middleware functions that can run during various stages of database operations, such as before saving a document or after retrieving it.
+
+**Types of Middleware in Mongoose:**
+
+1. **Pre Middleware:** Runs before certain operations like `save`, `validate`, `remove`, etc.
+2. **Post Middleware:** Runs after certain operations like `init`, `validate`, `save`, `remove`, etc.
+
+**Example:**
+```javascript
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+  username: String,
+  password: String,
+});
+
+// Pre-save middleware to hash the password before saving it
+userSchema.pre('save', function(next) {
+  const user = this;
+  if (!user.isModified('password')) return next();
+  // Hash the password (using bcrypt for example)
+  bcrypt.hash(user.password, 10, (err, hash) => {
+    if (err) return next(err);
+    user.password = hash;
+    next();
+  });
+});
+
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;
+```
