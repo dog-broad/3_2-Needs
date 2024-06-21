@@ -4,7 +4,48 @@ SVG (Scalable Vector Graphics) and Canvas are both commonly used technologies in
 
 SVG is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. It allows for the creation of shapes, paths, text, and other graphical elements using markup tags similar to HTML. SVG images are resolution-independent, meaning they can be scaled to any size without losing quality, which makes them ideal for responsive web design. SVG graphics are also searchable, indexable, and can be styled using CSS.
 
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG Example</title>
+</head>
+<body>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="red" />
+    </svg>
+    <svg width="100" height="100">
+        <rect x="10" y="10" width="80" height="80" stroke="black" stroke-width="4" fill="blue" />
+    </svg>
+</body>
+</html>
+```
+
+![](img/2024-06-21-21-49-58.png)
+
 Canvas, on the other hand, is a HTML5 element that provides a drawing surface for dynamic rendering of graphics using JavaScript. Unlike SVG, Canvas is raster-based, meaning it generates images pixel by pixel. Developers can use Canvas to draw shapes, lines, images, and text directly onto the web page programmatically. Canvas is well-suited for applications that require real-time rendering or complex animations, such as games, data visualization, and image editing tools.
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(10, 10, 80, 80);
+    </script>
+</body>
+</html>
+```
+
+![](img/2024-06-21-21-50-51.png)
 
 The choice between SVG and Canvas depends on the specific requirements of the project. SVG is preferable for static or semi-static graphics that require scalability and accessibility, while Canvas is more suitable for dynamic and interactive visualizations that demand performance and flexibility.
 
