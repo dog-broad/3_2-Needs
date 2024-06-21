@@ -1,5 +1,3 @@
-Let's break down your queries into several parts for clarity. Here is the detailed explanation:
-
 # ngModel
 
 **ngModel Example**
