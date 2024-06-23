@@ -20,4 +20,35 @@ Blockchain is a constantly growing **ledger** that keeps a **permanent** rec
 
 
 
+# Alternative Coins / Altcoins
 
+**ALTCOIN**
+
+Altcoins are generally defined as all cryptocurrencies other than Bitcoin. However, some people consider altcoins to be all cryptocurrencies other than Bitcoin and Ethereum because most cryptocurrencies are forked from one of the two. Some altcoins use different consensus mechanisms to validate transactions and open new blocks, or attempt to distinguish themselves from Bitcoin and Ethereum by providing new or additional capabilities or purposes. Most altcoins are designed and released by developers who have a different vision or use for their tokens or cryptocurrency.
+
+**Types of Altcoins**
+
+**Payment Token:** As the name implies, payment tokens are designed to be used as currency to exchange value between parties. Bitcoin is the prime example of a payment token.
+
+**Stablecoins:** Cryptocurrency trading and use have been marked by volatility since launch. Stablecoins aim to reduce this overall volatility by pegging their value to a basket of goods, such as fiat currencies, precious metals, or other cryptocurrencies. The basket acts as a reserve to redeem holders if the cryptocurrency fails or faces problems. Price fluctuations for stablecoins are not meant to exceed a narrow range.
+
+**Security Tokens:** Security tokens are tokenized assets offered on stock markets. Tokenization is the transfer of value from an asset to a token, made available to investors. Any asset can be tokenized, such as real estate or stocks. For this to work, the asset must be secured and held, otherwise the tokens are worthless. Security tokens are regulated by the Securities and Exchange Commission because they are designed to act as securities.
+
+**Utility Tokens:** Utility tokens are used to provide services within a network. For example, they might be used to purchase services, pay network fees, or redeem rewards. Filecoin, used to buy storage space and secure information on a network, is an example of a utility token.
+
+**Meme Coins:** As their name suggests, meme coins are inspired by a joke or a silly take on other well-known cryptocurrencies. They typically gain popularity in a short period of time, often hyped online by prominent influencers or investors attempting to exploit short-term gains.
+
+**Governance Tokens:** Governance tokens allow holders certain rights within a blockchain, such as voting for changes to protocols or having a say in decisions of a decentralized autonomous organization (DAO). Although they are generally native to a private blockchain and used for blockchain purposes, they are considered utility tokens due to their purpose.
+
+**Pros and Cons of Altcoins**
+
+**Pros:**
+- Improve upon another cryptocurrency's weaknesses
+- Higher survivability
+- Thousands to choose from
+
+**Cons:**
+- Lower popularity and smaller market cap compared to Bitcoin
+- Less liquidity than Bitcoin, meaning less value
+- Difficult to determine use cases
+- Many altcoins are scams or lose developer and community interest
