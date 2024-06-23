@@ -52,3 +52,40 @@ Altcoins are generally defined as all cryptocurrencies other than Bitcoin. Howev
 - Less liquidity than Bitcoin, meaning less value
 - Difficult to determine use cases
 - Many altcoins are scams or lose developer and community interest
+
+
+
+# Gas Limit
+
+Gas is a measure of computational power required to perform a transaction. The higher the gas used, the more expensive the transaction. Gas limit is the maximum amount of gas that can be used for a transaction. It is set by the user and any unused gas will be refunded to them. The gas limit is set to prevent infinite loops and other malicious activities on the Ethereum blockchain.
+
+Gas is required to be paid for every operation performed on the Ethereum blockchain. A transaction fee is charged as some amount of Ether and is deducted from the account balance of the transaction originator. The fee ensures transactions are included by miners for mining. If the fee is too low, the transaction may not be picked up; the higher the fee, the greater the likelihood of inclusion in the block by miners.
+
+**Transaction Cost Calculation:**
+The transaction cost can be estimated using the following formula:
+
+$$\text{Total cost} = \text{gasUsed} \times \text{gasPrice}$$
+
+Here,
+- $\text{gasUsed}$ is the total gas that is supposed to be used by the transaction during execution.
+- $\text{gasPrice}$ is specified by the transaction originator as an incentive for miners to include the transaction in the next block.
+
+**GAS LIMIT**
+
+Each operation costs some gas; a high-level fee schedule of a few operations is shown as an example here.
+
+<div style="text-align:center">
+<img src="img/2024-06-23-12-36-55.png" alt="Gas Limit" width="300" height="400"/>
+</div>
+
+**Example Calculation for SHA-3 Operation:**
+
+- SHA-3 costs 30 gas.
+- Assume the current gas price is 25 GWei. Convert it into Ether: $0.000000025$ Ether.
+
+
+**Calculation:**
+
+$$\text{Total cost} = 30 \times 0.000000025 = 0.00000075 \text{ Ether}$$
+
+In total, $0.00000075$ Ether is the total gas charged for the SHASHA-33 operation.
