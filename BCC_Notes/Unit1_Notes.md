@@ -253,7 +253,7 @@ The following steps describe the transaction lifecycle of a Bitcoin transaction:
 
 
 
-### Distributed Ledger Technology (DLT)
+# Distributed Ledger Technology (DLT)
 
 
 _DLT is basically just Blockchain, so write everythign you know about Blockchain_
