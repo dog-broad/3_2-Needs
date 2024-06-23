@@ -89,3 +89,26 @@ Each operation costs some gas; a high-level fee schedule of a few operations is 
 $$\text{Total cost} = 30 \times 0.000000025 = 0.00000075 \text{ Ether}$$
 
 In total, $0.00000075$ Ether is the total gas charged for the SHASHA-33 operation.
+
+
+# Merkle Tree
+
+A _Merkle tree_, also known as a binary _hash tree_, is a data structure used for efficiently summarizing and verifying the integrity of large sets of data. Merkle trees are binary trees containing cryptographic hashes.
+
+Merkle trees are used in bitcoin to summarize all the transactions in a block, producing an overall digital fingerprint of the entire set of transactions, providing a very efficient process to verify whether a transaction is included in a block.
+
+A Merkle tree is constructed by recursively hashing pairs of nodes until there is only one hash, called the *root*, or *merkle root*. The cryptographic hash algorithm used in bitcoin's merkle trees is _SHA256_ applied twice, also known as double-_SHA256_.
+
+<div style="text-align:center">
+<img src="img/2024-06-23-12-47-05.png" alt="Merkle Tree" width="750" height="400"/>
+</div>
+
+**Benefits:**
+- **Efficiency:** Merkle trees offer a highly efficient method for verifying data integrity with minimal computational overhead. They enable rapid verification of transactions and data blocks within a blockchain, enhancing the overall performance and reliability of decentralized networks like Bitcoin.
+
+<div style="text-align:center">
+<img src="img/2024-06-23-12-49-12.png" alt="Merkle Tree Efficiency"/>
+</div>
+
+**Conclusion:**
+Merkle trees are a foundational component of blockchain technology, providing a secure and efficient means to verify large datasets. Their hierarchical structure and cryptographic properties ensure data integrity and authenticity, making them indispensable for maintaining trust and reliability in decentralized systems.
