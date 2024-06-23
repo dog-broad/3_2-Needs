@@ -234,7 +234,7 @@ Smart contracts are self-executing contracts with the terms of the agreement dir
 
 
 
-### Solidity Programming Overview
+# Solidity Programming 
 
 **What is Solidity?**
 Solidity is a programming language developed by the Ethereum Foundation specifically for writing smart contracts on the Ethereum blockchain. It combines elements from Python, C++, and JavaScript and runs on the Ethereum Virtual Machine (EVM). Here's an overview:
@@ -305,3 +305,11 @@ Solidity is a programming language developed by the Ethereum Foundation specific
   address[] public studentList; // Example of a mapping with an array
   ```
 - **Use Cases:** Efficiently manages user balances, transaction records, and complex state variables in smart contracts.
+
+
+
+# 51 % attack
+
+> ***Refer to the below linked pdf for more details.***
+
+![51% attack](./51%attack.pdf)
