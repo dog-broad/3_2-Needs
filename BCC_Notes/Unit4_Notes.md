@@ -47,20 +47,43 @@ Hyperledger Fabric is a modular blockchain framework that provides a robust and 
     
     *   Smart contracts, written in chaincode, define the business logic that is executed by the peers. They are responsible for generating new facts to be added to the ledger.
 
-### Transaction Flow in Hyperledger Fabric
 
-1.  **Client A Initiates a Transaction**
+# Transaction Flow in Hyperledger Fabric
+
+#### Step-by-Step Explanation
+
+1.  **Client Initiates a Transaction:**
     
-    *   Client A sends a transaction proposal to the network, which is targeted at specific endorsing peers.
-2.  **Endorsing Peers Verify and Execute the Transaction**
+    *   **Client A** sends a request to **Client B** to purchase goods (e.g., radishes).
+    *   The request targets **Peer A** and **Peer B**, who represent **Client A** and **Client B** respectively.
+    *   The endorsement policy requires both peers to endorse the transaction, so the request goes to both **Peer A** and **Peer B**.
+    *   A transaction proposal, which is a request to invoke a chaincode function to read or update the ledger, is constructed using the Software Development Kit (SDK).
+    *   The SDK uses the user’s cryptographic credentials to produce a unique signature for the transaction proposal.
+    *   The SDK submits the transaction proposal to the target peer, which forwards it to other peers for execution.
+  
+2.  **Endorsing Peers Verify the Signature and Execute the Transaction:**
     
-    *   The endorsing peers verify the proposal, ensuring it is well-formed and has not been tampered with. They execute the transaction and generate a proposal response.
-3.  **Proposal Responses are Inspected**
+    *   The endorsing peers verify:
+        *   The transaction proposal is well-formed.
+        *   The transaction proposal has not been submitted before to protect against replay attacks.
+        *   The signature is valid.
+        *   The submitter (Client A) satisfies the channel’s writers’ policy and is authorized to perform the proposed operation on the channel.
+  
+3.  **Proposal Responses are Inspected:**
     
-    *   The client inspects the responses to ensure they match the endorsement policy.
-4.  **Transaction is Sent to the Ordering Service**
+    *   The target peer verifies the proposal responses.
+    *   Even if checking is not performed, the Hyperledger Fabric architecture ensures that the endorsement policy is checked and enforced when each peer validates transactions before committing them.
+  
+4.  **Target Peer Assembles Endorsements into a Transaction:**
     
-    *   The client packages the endorsed transaction and sends it to the ordering service, which orders the transactions and creates blocks.
-5.  **Transaction is Validated and Committed**
+    *   The target peer broadcasts transaction messages containing transaction proposals and responses to the ordering service. This includes:
+        *   Channel ID
+        *   Read/Write sets
+        *   A signature for each endorsing peer
+    *   The ordering service receives the transactions, orders them, and creates blocks of transactions per channel. It does not inspect the entire content of the transaction.
+
+5.  **Transaction is Validated and Committed:**
     
-    *   The ordered blocks are distributed to all peers in the channel. Peers validate the transactions against the endorsement policy and the current state, then commit the valid transactions to their ledger.
+    *   Blocks of transactions are delivered to all peers on the channel.
+    *   Peers validate the transactions within the block to ensure the endorsement policy is fulfilled.
+    *   Validated transactions are then committed to the ledger. 
