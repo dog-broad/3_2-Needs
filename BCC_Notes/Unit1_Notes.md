@@ -172,3 +172,40 @@ A Merkle tree is constructed by recursively hashing pairs of nodes until there i
 
 **Conclusion:**
 Merkle trees are a foundational component of blockchain technology, providing a secure and efficient means to verify large datasets. Their hierarchical structure and cryptographic properties ensure data integrity and authenticity, making them indispensable for maintaining trust and reliability in decentralized systems.
+
+
+
+
+# Transactions
+
+Tranactions refer to the transfer of assets between parties, typically cash or property. They are stored in a blockchain as copies, with this storage referred to as a digital ledger. They are irreversible. 
+
+Transactions are not encrypted and are publicly visible in the blockchain. Blocks are made up of transactions, and these can be viewed using any online blockchain explorer. 
+
+### The Transaction Life Cycle
+
+The following steps describe the transaction lifecycle of a Bitcoin transaction:
+
+1. **User/Sender Sends a Transaction:**
+   - A user or sender sends a transaction using wallet software or another interface.
+
+2. **Transaction Signing:**
+   - The wallet software signs the transaction using the sender's private key.
+
+3. **Transaction Broadcast:**
+   - The signed transaction is broadcasted to the Bitcoin network using a flooding algorithm.
+
+4. **Verification and Inclusion in a Block:**
+   - Mining nodes (miners) listening for transactions verify and include the transaction in the next block to be mined. Before being placed in a block, transactions are stored in a special memory buffer called the transaction pool.
+
+5. **Mining Process:**
+   - Mining begins, where the blockchain is secured and new coins are generated as a reward for miners who spend appropriate computational resources.
+
+6. **Solution of Proof of Work (PoW):**
+   - Once a miner solves the PoW problem, they broadcast the newly mined block to the network.
+
+7. **Block Verification and Propagation:**
+   - Nodes verify the block and propagate it further through the network. Confirmations start to generate.
+
+8. **Transaction Finalization:**
+   - Finally, confirmations begin to appear in the receiver's wallet. After approximately three confirmations (recommended), the transaction is considered finalized and confirmed. Waiting for multiple confirmations reduces the probability of double-spending.
