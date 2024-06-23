@@ -243,3 +243,52 @@ Bitcoin transactions involve the transfer of value (Bitcoins) from one address t
 While nodes perform initial transaction validation, miners play a crucial role in:
 - **Block Creation**: Miners collect validated transactions and attempt to create a new block by solving a cryptographic puzzle (Proof of Work).
 - **Inclusion in Blockchain**: Once a miner solves the puzzle, they broadcast the new block to the network. Other nodes and miners verify the block and its transactions before adding it to their own copy of the blockchain.
+
+
+
+
+# Forks
+
+Forks in blockchain technology result from divergences in protocol and consensus rules, leading to multiple valid versions of the blockchain. They fall into two main categories: Codebase Forks and Live Blockchain Forks.
+
+![](img/2024-06-23-17-56-32.png)
+
+### 1. Codebase Forks
+
+**Definition:** Developers modify the original blockchain code (e.g., Bitcoin) to create a new blockchain with different rules. 
+
+**Example:** Litecoin (LTC) was created as a codebase fork of Bitcoin, adjusting parameters like hashing algorithm and block time.
+
+**Characteristics:**
+- **Independent Blockchain:** Starts with a unique genesis block.
+- **Development Independence:** Allows for experimenting with new features or consensus mechanisms.
+
+### 2. Live Blockchain Forks
+
+These occur within an existing blockchain network due to disagreements or network issues.
+
+#### a. Intentional Forks
+
+**Definition:** Deliberate changes to add features or alter consensus.
+
+**i. Soft Fork**
+- **Backwards-Compatible:** New rules are compatible with old rules.
+- **Example:** Bitcoin’s SegWit introduced new transaction formats without invalidating old ones.
+
+**ii. Hard Fork**
+- **Non-Compatible:** New rules require node upgrades.
+- **Example:** Ethereum split into ETH and ETC after the DAO hack to reverse transactions.
+
+#### b. Accidental Forks (Temporary Forks)
+
+**Definition:** Temporary divergences due to network issues like simultaneous block mining.
+    
+**Characteristics:**
+- **Temporary:** Resolves as the network converges on a single chain.
+- **Example:** Common in Bitcoin where simultaneous mining leads to brief splits.
+
+### Reasons for Forks
+
+- **Development Updates:** Introduce new features, enhance security, or fix bugs.
+- **Disagreements:** Over protocol changes, governance, or economic incentives.
+- **Emergency Fixes:** Address security breaches or vulnerabilities.
