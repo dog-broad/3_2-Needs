@@ -1,6 +1,6 @@
 # Mining Systems in Blockchain
 
-***NOTE: The below text shows the evolution of mining systems in blockchain. If you want the types (PoW, PoS), refer to other notes***
+> ***NOTE: The below text shows the evolution of mining systems in blockchain. If you want the types (PoW, PoS), refer to other notes***
 
 Mining is a fundamental process in blockchain networks, particularly in Bitcoin, where it involves the validation of transactions and the addition of these transactions to the blockchain. Miners compete to solve complex mathematical problems, and the first to solve it gets to add a new block to the blockchain and is rewarded with newly created bitcoins and transaction fees.
 
@@ -101,6 +101,9 @@ Let’s illustrate Bitcoin Script in action through a basic P2PKH transaction:
 
 # Bitcoin Wallets
 
+> ***NOTE: Still not sure about this answer***  
+> *The follwing link showed prommising results: https://www.babypips.com/crypto/learn/what-are-different-types-of-bitcoin-wallets*
+
 Bitcoin wallets are a secure and convenient way to store and manage Bitcoin transactions. They offer convenience and security, but they also require trust in the service provider's security measures.
 
 Bitcoin wallets can be classified into several types based on how they store and manage private keys, their security features, and accessibility. Here's a detailed classification of Bitcoin wallets:
@@ -172,3 +175,6 @@ Bitcoin wallets can be classified into several types based on how they store and
 
 ### Considerations
 Choosing the right Bitcoin wallet depends on factors such as security preferences, convenience, and usage scenarios. Hardware wallets are generally recommended for long-term storage due to their robust security features, while mobile and online wallets offer convenience but require trust in the service provider's security measures. Paper wallets provide offline security but require careful handling. Understanding these distinctions helps users make informed decisions based on their specific needs and priorities.
+
+
+
