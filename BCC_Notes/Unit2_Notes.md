@@ -178,3 +178,36 @@ Choosing the right Bitcoin wallet depends on factors such as security preference
 
 
 
+# Anonymity
+
+Anonymity, particularly in the context of financial transactions like Bitcoin, refers to the ability of users to conduct transactions without revealing their true identity or personal information. It involves masking the link between the real-world identity of the sender or recipient and their transactions on the blockchain, the public ledger that records all Bitcoin transactions.
+
+### Types of Anonymity
+
+1. **Pseudonymity**: Bitcoin transactions are pseudonymous, meaning users interact using pseudonyms or Bitcoin addresses rather than their real names. Each transaction is linked to a Bitcoin address, which is a hash of the public key used to send and receive Bitcoins. Pseudonymity allows users to maintain a level of privacy by not directly associating their real-world identity with their Bitcoin transactions.
+
+2. **Unlinkability**: True anonymity requires unlinkability, meaning that it should be difficult to connect multiple transactions or addresses to the same user over time. This prevents someone from tracing a series of transactions back to a single entity or tracking spending habits across different transactions.
+
+### Challenges to Anonymity in Bitcoin
+
+While Bitcoin offers pseudonymity, several factors challenge its anonymity:
+
+- **Blockchain Transparency**: Bitcoin's blockchain is publicly accessible and transparent. Every transaction, once confirmed, is recorded permanently and can be viewed by anyone. This transparency allows for transaction analysis, which can potentially reveal patterns and links between addresses.
+
+- **Transaction Graph Analysis**: Techniques like transaction graph analysis can exploit the transparency of the blockchain. By analyzing patterns in transaction flows and linking multiple addresses to a single user based on spending habits or identifiable patterns (like change addresses), researchers or adversaries can deanonymize users.
+
+- **Address Reuse**: Reusing Bitcoin addresses can compromise anonymity. If multiple transactions are associated with a single address, it becomes easier to link those transactions together, reducing the unlinkability of the user's activities.
+
+- **IP Address Deanonymization**: When users broadcast transactions to the Bitcoin network, their IP addresses can potentially be exposed. Although techniques like using TOR can mitigate this risk, sophisticated adversaries may still be able to deanonymize transactions by correlating IP addresses with transaction timing and patterns.
+
+### Enhancing Anonymity in Bitcoin
+
+Several methods and technologies aim to enhance anonymity in Bitcoin transactions:
+
+- **Mixing Services**: Mixing or coin tumbling services aim to break the link between the sender and recipient addresses by mixing coins from multiple users. This process makes it harder to trace the origin of specific coins, thus enhancing anonymity.
+
+<div style="text-align:center;"><img src="img/2024-06-23-13-51-30.png" alt="Mixing Services" style="width:350px;height:200px;"></div>
+
+- **Privacy Coins**: Cryptocurrencies like Monero and Zcash incorporate specific features (such as ring signatures and zero-knowledge proofs) to achieve stronger anonymity and privacy guarantees compared to Bitcoin.
+
+- **Improving Practices**: Users can adopt best practices like using new addresses for each transaction, avoiding address reuse, and using technologies like TOR or VPNs to obfuscate their IP addresses when interacting with the Bitcoin network.
