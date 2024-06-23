@@ -312,4 +312,4 @@ Solidity is a programming language developed by the Ethereum Foundation specific
 
 > ***Refer to the below linked pdf for more details.***
 
-![51% attack](./51%attack.pdf)
+![51% attack](./51percent_attack.pdf)
