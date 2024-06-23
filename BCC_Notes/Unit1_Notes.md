@@ -91,6 +91,66 @@ $$\text{Total cost} = 30 \times 0.000000025 = 0.00000075 \text{ Ether}$$
 In total, $0.00000075$ Ether is the total gas charged for the SHASHA-33 operation.
 
 
+
+# Creation of a Block
+
+## Block Structure
+
+![](img/2024-06-23-12-54-14.png)
+
+The block structure is as follows:
+
+| Size       | Field              | Description                                             |
+|------------|--------------------|---------------------------------------------------------|
+| 4 bytes    | Block Size         | The size of the block, in bytes, following this field   |
+| 80 bytes   | Block Header       | Several fields forming the block header                  |
+| 1 - 9 bytes| Transaction Counter| Indicating how many transactions follow                  |
+| Variable   | Transactions       | The transactions recorded in this block                 |
+
+The block header is 80 bytes, whereas the average transaction is at least 250 bytes and the average block contains more than 500 transactions.  
+A complete block, with all transactions, is therefore 1000 times larger than the block header
+
+## Block Header
+
+| Size       | Field                  | Description                                           |
+|------------|------------------------|-------------------------------------------------------|
+| 4 bytes    | Version                | A version number to track software/protocol upgrades  |
+| 32 bytes   | Previous Block Hash    | A reference to the hash of the previous (parent) block in the chain |
+| 32 bytes   | Merkle Root            | A hash of the root of the Merkle tree of this block’s transactions |
+| 4 bytes    | Timestamp              | The approximate creation time of this block (seconds from Unix Epoch) |
+| 4 bytes    | Difficulty Target      | The proof of work algorithm difficulty target for this block |
+| 4 bytes    | Nonce                  | A counter used for the proof of work algorithm        |
+
+---
+
+
+**Blockchain and Cryptocurrency**
+
+Each block within the blockchain is identified by a hash, generated using the SHA256 cryptographic hash algorithm on the header of the block.
+
+Each block also references a previous block, known as the parent block, through the *"previous block hash"* field in the block header.
+
+The sequence of hashes linking each block to its parent creates a chain going back all the way to the first block ever created, known as the genesis block.
+
+
+**Multiple Children and Blockchain Forks**
+
+Although a block has just one parent, it can temporarily have multiple children. Each of the children refers to the same block as its parent and contains the same parent hash in the *"previous block hash"* field.
+
+Multiple children arise during a blockchain *"fork,"* a temporary situation that occurs when different blocks are discovered almost simultaneously by different miners. Eventually, only one child block becomes part of the blockchain and the *"fork"* is resolved.
+
+Even though a block may have more than one child, each block can have only one parent. This is because a block has one single *"previous block hash"* field referencing its single parent.
+
+**Impact of Parent Block Changes**
+
+The *"previous block hash"* field is inside the block header and affects the current block’s hash. The child’s own identity changes if the parent’s identity changes.
+
+When the parent is modified in any way, the parent’s hash changes. This necessitates a change in the *"previous block hash"* pointer of the child, which in turn causes the child’s hash to change. This cascading effect continues down the chain, requiring changes in subsequent blocks.
+
+This cascade effect ensures that once a block has many generations following it, it cannot be changed without recalculating all subsequent blocks. This immutable chain of blocks is a key feature of Bitcoin’s security.
+
+
+
 # Merkle Tree
 
 A _Merkle tree_, also known as a binary _hash tree_, is a data structure used for efficiently summarizing and verifying the integrity of large sets of data. Merkle trees are binary trees containing cryptographic hashes.
