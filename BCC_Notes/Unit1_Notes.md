@@ -255,6 +255,9 @@ The following steps describe the transaction lifecycle of a Bitcoin transaction:
 
 ### Distributed Ledger Technology (DLT)
 
+
+_DLT is basically just Blockchain, so write everythign you know about Blockchain_
+
 Distributed Ledger Technology (DLT), also known as blockchain technology, refers to the technological infrastructure and protocols that enable simultaneous access, validation, and record updating in an immutable manner across a network spread across multiple entities or locations.
 
 DLT, introduced by Bitcoin, has become a buzzword in the technology world due to its potential across various industries and sectors. In simple terms, DLT challenges the traditional centralized mechanisms by establishing a network where trust is distributed rather than relying on a single trusted third party.
