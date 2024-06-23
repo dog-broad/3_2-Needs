@@ -209,3 +209,43 @@ The following steps describe the transaction lifecycle of a Bitcoin transaction:
 
 8. **Transaction Finalization:**
    - Finally, confirmations begin to appear in the receiver's wallet. After approximately three confirmations (recommended), the transaction is considered finalized and confirmed. Waiting for multiple confirmations reduces the probability of double-spending.
+
+
+# Type of Blockchains
+
+1. Public Blockchain
+
+   - These blockchains are completely open to the idea of decentralization.
+   - They don’t have any restrictions, anyone having a computer and internet can participate in the network.
+   - As the name suggests, it is public, this blockchain is open to the public, which means it is not owned by anyone.
+   - Anyone having internet and a computer with good hardware can participate in this public blockchain.
+   - All the computers in the network hold copies of other nodes or blocks present in the network.
+   - In this public blockchain, transactions can be verified and records can be kept.
+
+2. Private Blockchain
+
+   - These blockchains are not as decentralized as public blockchains.
+   - Only selected nodes can participate in the process, making it more secure than others.
+   - They are not as open as a public blockchain.
+   - They are open to some authorized users only.
+   - These blockchains are operated in a closed network.
+   - In this few people are allowed to participate in a network within a company/organization.
+
+3. Hybrid Blockchain
+
+   - It is a combination of both public and private blockchain.
+   - Permission-based and permissionless systems are used.
+   - User access information via smart contracts.
+   - Even a primary entity owns a hybrid blockchain, it cannot alter the transaction.
+
+4. Consortium Blockchain
+
+   - It is a creative approach to solve the needs of the organization.
+   - This blockchain validates the transaction and also initiates or receives transactions.
+   - Also known as Federated Blockchain.
+   - This is an innovative method to solve the organization’s needs.
+   - Some part is public and some part is private.
+   - In this type, more than one organization manages the blockchain.
+
+
+![](img/2024-06-23-13-14-10.png)
