@@ -140,3 +140,44 @@ Later developments by Buterin, E. Glen Weyl, and Puja Ohlhaver expanded upon thi
 6. **NFT Verification**: Authenticating NFTs by linking them to their creators' SBTs, ensuring buyers receive genuine products in the NFT marketplace.
 
 7. **Governance in DeFi**: Distributing governance tokens as non-transferable SBTs to ensure voting rights reflect genuine community support and commitment.
+
+
+
+
+
+
+# Zero Knowledge Proof (ZKP)
+
+**Definition:**
+Zero Knowledge Proof (ZKP) is an encryption scheme originally proposed by MIT researchers Shafi Goldwasser, Silvio Micali, and Charles Rackoff in the 1980s. It allows one party, the prover, to prove to another party, the verifier, that a statement is true without revealing any additional information beyond the validity of the statement itself.
+
+**Examples:**
+
+1. **Colour-blind friend and Two balls:**
+   - **Scenario:** Sachin wants to prove to Sanchita, who is colour blind, that he has two balls of different colours.
+   - **Process:** Sanchita randomly switches the balls behind her back. Sachin, without knowing the switch, must correctly identify if the balls are of different colours.
+   - **Outcome:** If repeated multiple times, the probability of Sachin correctly identifying the balls' colours, despite being colour-blind, demonstrates the soundness of his assertion without revealing the colours themselves.
+
+2. **Finding Waldo:**
+   - **Scenario:** Sachin claims he has a special way to find Waldo in a crowded picture but doesn't want to reveal his method to Sanchita.
+   - **Process:** Sachin uses a small cardboard cutout to show Sanchita that he can precisely locate Waldo in the picture.
+   - **Outcome:** Sanchita can verify that Sachin can find Waldo without knowing how he does it.
+
+    In essence, Sachin demonstrates his ability without revealing the details of his method, proving the effectiveness of his claim to Sanchita.
+
+**Properties of ZKP:**
+
+- **Zero-Knowledge:** The verifier learns nothing about the statement other than its truthfulness.
+- **Completeness:** If the statement is true, an honest verifier will eventually be convinced by the prover.
+- **Soundness:** A dishonest prover cannot convince the verifier that a false statement is true.
+
+**Types of ZKP:**
+
+1. **Interactive Zero Knowledge Proof:**
+   - Requires interaction between the prover and verifier.
+   - Example: Sachin and Sanchita's ball experiment involves iterative interactions to prove the validity of Sachin's claim.
+
+2. **Non-Interactive Zero Knowledge Proof:**
+   - Does not require real-time interaction.
+   - Achieved using techniques like Fiat-Shamir heuristic, where challenges are based on a hashed function chosen by the verifier.
+   - Example: Sachin demonstrating his algorithm to find Waldo without Sanchita needing to interact in real-time.
