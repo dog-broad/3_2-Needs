@@ -142,6 +142,31 @@ Later developments by Buterin, E. Glen Weyl, and Puja Ohlhaver expanded upon thi
 7. **Governance in DeFi**: Distributing governance tokens as non-transferable SBTs to ensure voting rights reflect genuine community support and commitment.
 
 
+> Unsure exaple of a Soulbound Token Solidity Program
+
+```js
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SoulBoundToken {
+    mapping(address => uint256) public soulTokens;
+
+    function mintToken(uint256 amount) public {
+        soulTokens[msg.sender] += amount;
+    }
+
+    function transferToken(address to, uint256 amount) public {
+        require(soulTokens[msg.sender] >= amount, "Insufficient tokens");
+        soulTokens[msg.sender] -= amount;
+        soulTokens[to] += amount;
+    }
+
+    function getBalance(address account) public view returns (uint256) {
+        return soulTokens[account];
+    }
+}
+```
+
 
 
 
