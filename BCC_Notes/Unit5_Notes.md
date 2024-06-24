@@ -181,3 +181,8 @@ Zero Knowledge Proof (ZKP) is an encryption scheme originally proposed by MIT re
    - Does not require real-time interaction.
    - Achieved using techniques like Fiat-Shamir heuristic, where challenges are based on a hashed function chosen by the verifier.
    - Example: Sachin demonstrating his algorithm to find Waldo without Sanchita needing to interact in real-time.
+
+
+
+
+
