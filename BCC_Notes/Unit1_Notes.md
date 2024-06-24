@@ -88,7 +88,7 @@ Each operation costs some gas; a high-level fee schedule of a few operations is 
 
 $$\text{Total cost} = 30 \times 0.000000025 = 0.00000075 \text{ Ether}$$
 
-In total, $0.00000075$ Ether is the total gas charged for the SHASHA-33 operation.
+In total, $0.00000075$ Ether is the total gas charged for the SHA-3 operation.
 
 
 
