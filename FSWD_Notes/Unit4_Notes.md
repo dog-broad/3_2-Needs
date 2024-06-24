@@ -434,3 +434,90 @@ AngularJS provides several directives to handle mouse events. These directives a
        console.log('Mouse over the element!');
      };
      ```
+
+
+
+# AngularJS vs. Angular
+
+| Aspect               | AngularJS                            | Angular                            |
+|----------------------|--------------------------------------|------------------------------------|
+| **Architecture**     | MVC framework with two-way data binding. | Platform for building applications with modern architecture. |
+| **Language**         | Uses JavaScript.                     | Uses TypeScript.                   |
+| **Version**          | Stable version is 1.7.x.              | Major versions start from 2.x.     |
+| **Framework**        | Front-end JavaScript framework.       | Comprehensive platform and framework. |
+| **Rendering**        | Uses regular DOM.                    | Uses Virtual DOM.                  |
+| **Tooling**          | Limited CLI and tooling support.     | Robust CLI and extensive tooling.  |
+| **Mobile Support**   | Lacks native mobile support.          | Provides native mobile support.    |
+| **Backward Compatibility** | Ensures compatibility with older browsers. | Less backward compatibility.       |
+| **Performance**      | Slower compared to Angular.           | Faster rendering and improved performance. |
+| **Learning Curve**   | Easier learning curve.               | Steeper learning curve due to complexity. |
+| **Developed By**     | Developed by Google.                 | Also developed by Google.          |
+| **Usage**            | Used for legacy projects.            | Preferred for modern web applications. |
+
+
+# Data Binding in Angular
+
+In Angular, data binding allows you to establish communication between the component class (business logic) and the template (UI). There are mainly two types of data binding: one-way and two-way.
+
+### One-Way Data Binding
+
+1. **Interpolation (`{{ }}`)**: It is used to output the component data into the view.
+
+   ```html
+   <h1>{{ title }}</h1>
+   ```
+
+   - **Purpose**: Renders data from the component class to the template.
+   - **Direction**: Component to view (one-way).
+
+2. **Property Binding (`[ ]`)**: Binds data from the component class to an HTML element property.
+
+   ```html
+   <img [src]="imageUrl">
+   ```
+
+   - **Purpose**: Sets values dynamically to HTML properties.
+   - **Direction**: Component to view (one-way).
+
+3. **Attribute Binding (`[attr.attributeName]`)**: Binds an attribute of an HTML element to a property in the component class.
+
+   ```html
+   <button [attr.disabled]="isDisabled">Disable</button>
+   ```
+
+   - **Purpose**: Dynamically sets HTML attributes.
+   - **Direction**: Component to view (one-way).
+
+4. **Class Binding (`[class.className]`)**: Binds an HTML class attribute to a component property.
+
+   ```html
+   <div [class.error]="isError">Error</div>
+   ```
+
+   - **Purpose**: Adds or removes classes based on component data.
+   - **Direction**: Component to view (one-way).
+
+5. **Style Binding (`[style.styleName]`)**: Binds an HTML style attribute to a component property.
+
+   ```html
+   <p [style.color]="isError ? 'red' : 'green'">Dynamic Color</p>
+   ```
+
+   - **Purpose**: Sets inline styles dynamically.
+   - **Direction**: Component to view (one-way).
+
+### Two-Way Data Binding
+
+6. **Two-Way Binding (`[(ngModel)]`)**: Establishes a two-way data binding between a form input element and a component property.
+
+   ```html
+   <input type="text" [(ngModel)]="username">
+   ```
+
+   - **Purpose**: Syncs data between the view and the component class.
+   - **Direction**: Component to view and view to component (two-way).
+
+### Summary
+
+- **One-way binding** allows data flow from the component class to the view.
+- **Two-way binding** enables bidirectional data flow between the view and the component class, facilitating real-time updates.

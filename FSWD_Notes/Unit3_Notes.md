@@ -375,3 +375,10 @@ const User = mongoose.model('User', userSchema);
 
 module.exports = User;
 ```
+
+
+
+
+#  Create a UI form with user Registration, Password Encryption and Login functions using node Mongodb driver
+
+Refer to [Week 7 & Week 8 of FSWD Lab](../FSWD-Lab.md#Week-7)

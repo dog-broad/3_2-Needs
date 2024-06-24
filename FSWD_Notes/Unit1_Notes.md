@@ -293,3 +293,25 @@ Here is an example of how to embed audio and video content using HTML5:
 ```
 
 ![](img/2024-06-16-22-49-01.png)
+
+
+
+# Use of CSS in DHTML
+
+In the context of DHTML (Dynamic HTML), which refers to a combination of HTML, CSS, and JavaScript to create dynamic and interactive web pages, CSS (Cascading Style Sheets) plays a crucial role in styling and enhancing the presentation of these pages. Here are some key uses of CSS in DHTML:
+
+1. **Styling Elements**: CSS allows developers to define styles for HTML elements, such as fonts, colors, margins, padding, and borders. This capability enhances the visual appeal and layout of DHTML elements.
+
+2. **Animation and Transitions**: CSS can be used to create animations and transitions without relying on JavaScript. This includes effects like fade-ins, slide-outs, rotations, and more, adding dynamic behavior to elements on the page.
+
+3. **Responsive Design**: With CSS, developers can implement responsive design principles, making DHTML pages adapt to different screen sizes and orientations. Media queries in CSS enable styles to change based on device characteristics, enhancing usability across various devices.
+
+4. **Flexibility in Layout**: CSS Flexbox and Grid layout modules provide powerful tools to create complex and flexible layouts within DHTML. These layouts can dynamically adjust to content changes and screen sizes, improving user experience.
+
+5. **Pseudo-classes and Pseudo-elements**: CSS supports pseudo-classes (e.g., `:hover`, `:focus`, `:nth-child()`) and pseudo-elements (e.g., `::before`, `::after`), which allow developers to apply styles based on user interaction or element state. This enhances interactivity and visual feedback on DHTML pages.
+
+6. **Custom Fonts**: CSS enables the use of custom fonts through `@font-face` rule, allowing DHTML pages to use non-standard fonts beyond the default system fonts. This contributes to brand identity and design aesthetics.
+
+7. **Transforms and 3D Effects**: CSS provides `transform` and `perspective` properties for applying transformations and creating 3D effects on DHTML elements. These effects can include translations, rotations, scalings, and skewings, enhancing visual appeal and user engagement.
+
+8. **Cross-Browser Compatibility**: CSS helps maintain consistent styling across different browsers and platforms, ensuring that DHTML pages render correctly and uniformly for all users.
