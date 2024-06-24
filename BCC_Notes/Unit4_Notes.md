@@ -50,9 +50,9 @@ Hyperledger Fabric is a modular blockchain framework that provides a robust and 
 
 # Transaction Flow in Hyperledger Fabric
 
-#### Step-by-Step Explanation
+### Step-by-Step Explanation
 
-1.  **Client Initiates a Transaction:**     
+1.  ### Client Initiates a Transaction:  
     ![](img/2024-06-24-18-53-00.png)
     *   **Client A** sends a request to **Client B** to purchase goods (e.g., radishes).
     *   The request targets **Peer A** and **Peer B**, who represent **Client A** and **Client B** respectively.
@@ -62,7 +62,7 @@ Hyperledger Fabric is a modular blockchain framework that provides a robust and 
     *   The SDK submits the transaction proposal to the target peer, which forwards it to other peers for execution.
 
   
-2.  **Endorsing Peers Verify the Signature and Execute the Transaction:**  
+2.  ### Endorsing Peers Verify the Signature and Execute the Transaction:  
     ![](img/2024-06-24-18-54-03.png)
     *   The endorsing peers verify:
         *   The transaction proposal is well-formed.
@@ -70,12 +70,12 @@ Hyperledger Fabric is a modular blockchain framework that provides a robust and 
         *   The signature is valid.
         *   The submitter (Client A) satisfies the channel’s writers’ policy and is authorized to perform the proposed operation on the channel.
   
-3.  **Proposal Responses are Inspected:**  
+3.  ### Proposal Responses are Inspected:  
     ![](img/2024-06-24-18-54-16.png)
     *   The target peer verifies the proposal responses.
     *   Even if checking is not performed, the Hyperledger Fabric architecture ensures that the endorsement policy is checked and enforced when each peer validates transactions before committing them.
   
-4.  **Target Peer Assembles Endorsements into a Transaction:**  
+4.  ### Target Peer Assembles Endorsements into a Transaction:  
     ![](img/2024-06-24-18-54-27.png)
     *   The target peer broadcasts transaction messages containing transaction proposals and responses to the ordering service. This includes:
         *   Channel ID
@@ -83,7 +83,7 @@ Hyperledger Fabric is a modular blockchain framework that provides a robust and 
         *   A signature for each endorsing peer
     *   The ordering service receives the transactions, orders them, and creates blocks of transactions per channel. It does not inspect the entire content of the transaction.
 
-5.  **Transaction is Validated and Committed:**  
+5.  ### Transaction is Validated and Committed:  
     ![](img/2024-06-24-18-56-24.png)
     *   Blocks of transactions are delivered to all peers on the channel.
     *   Peers validate the transactions within the block to ensure the endorsement policy is fulfilled.
