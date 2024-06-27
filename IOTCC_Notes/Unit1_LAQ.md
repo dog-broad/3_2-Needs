@@ -105,3 +105,37 @@ ITS refers to the application of information and communication technologies (ICT
   - **Sustainability**: Reduces environmental impact through better traffic management and fuel efficiency.
 - **Integration with IoT**: Leverages IoT to gather and process data from vehicles and infrastructure in real-time, improving decision-making for transport systems.
 
+
+
+# SWOT Analysis on IoT
+
+> It's absurd to expect a SWOT analysis on IoT based solely on notes about SWOT on China's advantages in IoT. It narrows our understanding. So If you want actual SWOT Analysis of Iot, expand the follwoing section, or you can continue to read the rest of the dumb notes.
+
+<details>
+<summary>SWOT Analysis on IoT</summary>
+
+### SWOT Analysis on IoT
+
+
+| **Strengths**                                         | **Weaknesses**                                       |
+|--------------------------------------------------------|------------------------------------------------------|
+| Connectivity and Integration                           | Security Concerns                                    |
+| Data Collection and Analytics                          | Interoperability Challenges                          |
+| Automation and Efficiency                              | Complexity of Implementation                         |
+| Scalability                                           | Reliability and Maintenance                          |
+| Improved Decision Making                               | Privacy Issues                                       |
+
+| **Opportunities**                                      | **Threats**                                           |
+|--------------------------------------------------------|-------------------------------------------------------|
+| Market Growth                                          | Cybersecurity Risks                                   |
+| Edge Computing                                         | Regulatory Challenges                                 |
+| AI and Machine Learning Integration                    | Data Overload                                         |
+| Smart Home and Consumer IoT                            | High Initial Costs                                    |
+| Environmental Monitoring                               | Lack of Standards                                     |
+
+</details>
+
+
+<p align="center">
+    <img src="img/2024-06-27-21-02-01.png" alt="SWOT Analysis on IoT" />
+</p>
