@@ -139,3 +139,10 @@ ITS refers to the application of information and communication technologies (ICT
 <p align="center">
     <img src="img/2024-06-27-21-02-01.png" alt="SWOT Analysis on IoT" />
 </p>
+
+
+
+
+# 4 Pillars of IoT
+
+[Refer here](./4pillars.pdf)
