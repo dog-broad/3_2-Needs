@@ -30,6 +30,7 @@ $$
 5. **Precision**: The consistency or repeatability of measurements, meaning successive readings do not differ.
 
     The mathematical expression provided is:
+
 $$ P = 1 - \left| \frac{X_n - \overline{X_n}}{X_n} \right| $$
 
 
