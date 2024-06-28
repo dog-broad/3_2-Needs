@@ -1,3 +1,115 @@
+# M2M and WSN Protocols
+
+### M2M (Machine-to-Machine) Protocols
+
+1. **Development and Standardization:**
+   - Most M2M applications today are developed in a highly customized manner.
+   - The high-level M2M architecture from the M2M Standardization Task Force includes fixed and other non-cellular wireless networks.
+   - In the United States, M2M and IoT (Internet of Things) are sometimes used interchangeably.
+
+2. **Data Transport Protocol Standards:**
+   - M2MXML
+   - JSON (JavaScript Object Notation)
+   - BITXML
+   - WMMP (Wireless Machine Management Protocol)
+   - MDMP (Military Decision-Making Process)
+
+3. **Device Management and Security:**
+   - Standardized M2M device management
+   - M2M gateway standardization
+   - M2M security and fraud detection
+   - Addressing IP issues for devices, particularly IPv6
+   - Remote management of devices behind a gateway or firewall
+
+4. **Other M2M Standards Activities:**
+   - Extending OMA DM to support M2M devices and protocol management objects
+   - Development of network APIs for M2M service capabilities
+   - Establishing charging standards
+   - Supporting MULTI IMSI and M2M services without MSISDN
+   - Implementing remote diagnostics, monitoring, provisioning, and discovery
+   - Providing open REST-based APIs for M2M applications
+
+### WSN (Wireless Sensor Networks) Protocols
+
+1. **Standardization Bodies:**
+   - Several standardization bodies focus on WSNs, with IEEE concentrating on physical and MAC layers.
+
+2. **Transducer Electronic Data Sheets (TEDS):**
+   - TEDS are memory devices attached to transducers, storing identification, calibration, correction data, and manufacturer information.
+   - IEEE 1451 standards family governs these aspects:
+
+     - **IEEE 1451.0-2007:** Common Functions, Communication Protocols, and TEDS Formats
+     - **IEEE 1451.1-1999:** Network Capable Application Processor Information Model
+     - **IEEE 1451.2-1997:** Transducer to Microprocessor Communication Protocols & TEDS Formats
+     - **IEEE 1451.3-2003:** Digital Communication & TEDS Formats for Distributed Multi-drop Systems
+     - **IEEE 1451.4-2004:** Mixed-mode Communication Protocols & TEDS Formats
+     - **IEEE 1451.5-2007:** Wireless Communication Protocols & TEDS Formats
+     - **IEEE 1451.7-2010:** Transducers to RFID Systems Communication Protocols & TEDS Formats
+
+   - The goal of IEEE 1451 standards is to allow access to transducer data through common interfaces, whether the transducers are connected via wired or wireless means. IEEE P1451.3, which is XML-based, allows manufacturers to modify content.
+
+3. **Semantic Sensor Web (SSW):**
+   - An approach to annotating sensor data with spatial, temporal, and semantic metadata based on OGC SWE (Sensor Web Enablement).
+   - **Components:**
+     - **SWE Common:** Common data models and schema
+     - **SensorML:** Models and schema for sensor systems and processes surrounding measurements
+     - **Observations & Measurements (O&M):** Models and schema for packaging observation values
+     - **Transducer Markup Language (TML):** Models and schema for multiplexed data from sensor systems
+
+
+# SCADA and RFID Protocols
+
+### SCADA (Supervisory Control and Data Acquisition) Protocols
+
+1. **Overview:**
+   - SCADA is a fundamental component of industrial automation, representing a key pillar of the IoT landscape in this domain.
+   - The IEEE created standard C37.1 for SCADA and automation systems in 2007.
+
+2. **Industrial Automation Evolution:**
+   - In recent years, network-based industrial automation has significantly evolved with the use of intelligent electronic devices (or IoT devices) in substations and power stations.
+
+3. **Key Terms:**
+   - **IRIG:** Inter Range Instrument Group time code.
+   - **EMS:** Energy Management Systems.
+   - **DMS:** Distribution Management Systems.
+
+4. **Security:**
+   - A firewall, which can be hardware or software, controls the secure inflow and outflow of data for devices.
+
+5. **OPC (OLE for Process Control):**
+   - OPC is a standard that specifies the communication of real-time plant data between control devices from different manufacturers.
+   - It originated from DDE (Dynamic Data Exchange) technologies based on DOS for PCs, providing the ability for PCs to run multiple applications simultaneously and exchange data at runtime.
+   - SCADA software facilitated the transition from DDE to OPC.
+   - OPC was designed to provide a common bridge for Windows-based software applications and process control hardware.
+   - OPC has achieved significant success in many application areas, many of which are closely related to or part of IoT applications.
+
+### RFID (Radio Frequency Identification) Protocols
+
+1. **Overview:**
+   - RFID protocols and data formats are well-defined, mostly by EPC (Electronic Product Code) Global.
+
+2. **Common RFID Protocols:**
+   - **PML (Physical Markup Language).**
+   - **Object Naming Service Edgeware.**
+   - **EPC Information Service.**
+   - **Application Level Events (ALE).**
+
+3. **Smart Cards with Contactless Interfaces:**
+   - Visa and MasterCard have deployed an easy-to-implement version of smart cards in the United States.
+   - Smart cards are also being introduced in personal identification and entitlement schemes at regional, national, and international levels.
+   - There are two types of contactless cards (Type A and Type B) allowing communication at distances up to 10 cm.
+   - An alternative standard for contactless smart cards is ISO/IEC 15693, which allows communication at distances up to 50 cm.
+
+### Summary:
+
+- **SCADA** is essential for industrial automation and is evolving with IoT devices, while **OPC** enhances communication between control devices from different manufacturers.
+- **RFID** protocols are crucial for tracking and identification, with standards defined by EPC Global and applications in smart cards for secure and efficient data exchange.
+
+
+
+
+
+
 # Issues with IoT Standardization
 
 IoT standardization faces significant challenges despite efforts from various organizations and vertical applications like smart grids and telematics. Here are two critical issues:
