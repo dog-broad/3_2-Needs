@@ -1,3 +1,28 @@
+# Issues with IoT Standardization
+
+IoT standardization faces significant challenges despite efforts from various organizations and vertical applications like smart grids and telematics. Here are two critical issues:
+
+1. **Decentralization of ICT Standardization:**
+   - ICT (Information and Communication Technology) standardization is decentralized, resulting in a network of diverse and sometimes conflicting standards.
+   - Heterogeneous standards across different domains make interoperability and integration complex and challenging.
+   - Harmonizing these standards becomes crucial to ensure seamless communication and compatibility within IoT ecosystems.
+
+2. **Inclusivity in Standardization Process:**
+   - Effective IoT standardization requires broad participation from all stakeholders involved in IoT technologies and applications.
+   - It is essential to involve industry experts, academia, government bodies, and end-users to gather diverse perspectives and ensure comprehensive standardization.
+   - Lack of inclusivity can lead to standards that do not fully address the needs and requirements of all stakeholders, hindering adoption and interoperability.
+
+**Web-Oriented Standard Organizations:**
+- **OASIS (Organization for the Advancement of Structured Information Standards):**
+  - Specializes in standards for web services, cloud computing, and electronic business.
+  - Its expertise extends to high-level, segment-independent standardization relevant to IoT (e.g., Web of Things).
+
+- **W3C (World Wide Web Consortium):**
+  - Develops standards for the web to ensure its interoperability and long-term growth.
+  - Plays a crucial role in shaping IoT standards related to web technologies and interfaces.
+
+
+
 # Framework of Wireless Sensor Networks (WSN)
 
 Wireless Sensor Networks (WSN) are a key component of the Internet of Things (IoT) ecosystem, enabling the collection and transmission of data from distributed sensors to a central location. The framework of WSN involves various layers and components that work together to ensure efficient data communication and processing. Here's an overview of the key elements of the WSN framework:
