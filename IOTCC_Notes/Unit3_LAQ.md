@@ -12,7 +12,7 @@ OGC SWE(Open Geospatial Consortium, Sensor Web Enablement) is a set of standards
 - **Tasking:** Allows controlling sensors and requesting specific data.
 - **Access:** Provides ways to get sensor readings and streams of data.
 - **Alerts:** Supports sending alerts when certain conditions are met.
-
+  
 **Standards Provided:**
 - **Sensor Observation Service (SOS):** Access sensor data over the web.
 - **Sensor Planning Service (SPS):** Control sensors and request data.
