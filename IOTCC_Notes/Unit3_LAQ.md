@@ -90,3 +90,41 @@ _The examples also imply the standards/protocols they need to follow_
   - Deployed along roadsides to act as gateways for vehicular on-board units.
   - Support vehicle-to-roadside (V2R) communications for traffic management and safety applications.
 
+
+
+
+
+# Standards of SCADA
+
+Standards are essential in the realm of SCADA (Supervisory Control and Data Acquisition) systems to ensure they operate efficiently, securely, and reliably across diverse industrial applications. Here's an overview focusing on key standards:
+
+### 1. ISO 16100-1:2009
+- **Purpose**: Establishes a framework for the interoperability of software products within the manufacturing domain.
+- **Components Addressed**:
+  - Information exchange models
+  - Software object models
+  - Interfaces, services, and protocols
+  - Capability profiles
+  - Conformance test methods
+
+ISO 16100-1 gives rules to make different software in factories work well together by improving their compatibility and interoperability.
+
+### 2. ANSI/ISA-95
+- **Purpose**: Standardizes the integration between enterprise and control systems to streamline operations and reduce costs and risks.
+- **Parts**:
+  - **ANSI/ISA-95.00.01-2000**: Defines models and terminology.
+  - **ANSI/ISA-95.00.02-2001**: Specifies object model attributes.
+  - **ANSI/ISA-95.00.03-2005**: Details models for manufacturing operations management.
+  - **ISA-95.04 and ISA-95.05**: Further refine object models and describe business to manufacturing transactions.
+
+ISA-95 helps connect business and manufacturing systems smoothly, making operations more efficient and integration easier.
+
+### 3. OPC Unified Architecture (UA)
+   ![](img/2024-06-28-12-06-47.png)
+- **Purpose**: Modernizes communication protocols within SCADA systems, replacing DCOM with platform-independent protocols.
+- **Features**:
+  - Platform independence (support for JavaEE, .NET, and C)
+  - Enhanced security mechanisms
+  - Object-oriented model encompassing data access, alarms/events, historical data, methods, and type systems.
+
+OPC UA improves how different systems work together securely, adding more features than typical SCADA systems.
