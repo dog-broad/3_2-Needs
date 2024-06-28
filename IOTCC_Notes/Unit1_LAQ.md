@@ -29,6 +29,11 @@ EVs play a dual role within the smart grid ecosystem, acting as both consumers o
 
 # Smart Building Management System
 
+Smarter Planet is a corporate initiative of the information Technology company IBM . The initiative seeks to highlight how forward-thinking leaders in business, government, and civil society around the world are capturing the potential of smarter systems to achieve economic growth, near-term efficiency, sustainable development, and societal progress.
+* Examples of smarter systems include smart grids, water management systems, solutions to traffic congestion problems, greener buildings etc.
+* Intelligent sensors that keep tabs on things and places 
+
+
 A Smart Building Management System (BMS) is a sophisticated platform that integrates and optimizes various aspects of building operations to enhance efficiency, energy management, and overall functionality.
 
 <p align="center">
@@ -141,8 +146,3 @@ ITS refers to the application of information and communication technologies (ICT
 </p>
 
 
-
-
-# 4 Pillars of IoT
-
-[Refer here](./4pillars.pdf)
