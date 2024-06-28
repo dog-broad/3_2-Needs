@@ -47,6 +47,8 @@ SCADA systems are integral to modern industrial operations, providing real-time 
 
 Wireless Sensor Networks (WSNs) are decentralized networks of spatially distributed autonomous devices, equipped with sensors to monitor physical or environmental conditions and communicate wirelessly. They are designed to gather data from their surroundings and transmit it to a central location for analysis and decision-making.
 
+![](img/2024-06-28-21-06-52.png)
+
 **Components of WSN:**
 
 - **End Nodes:** These are devices equipped with sensors that collect data and can also act as routers to relay data within the network.
@@ -84,6 +86,8 @@ Wireless Sensor Networks (WSNs) are decentralized networks of spatially distribu
 # Machine-to-Machine (M2M) 
 
 Machine-to-Machine (M2M) communication refers to direct communication between devices using any communication channel, including wired and wireless. It is a foundational concept within the Internet of Things (IoT), focusing on device connectivity and data exchange.
+
+![](img/2024-06-28-21-07-38.png)
 
 **Six Pillars of M2M:**
 
@@ -123,3 +127,40 @@ Machine-to-Machine (M2M) communication refers to direct communication between de
   1. **Device Management:** Involves the production and deployment of devices connected via M2M technologies.
   2. **Application Development and Service Delivery:** Focuses on creating applications and services that leverage M2M connectivity for specific industry needs.
 
+
+
+**RFID: The Internet of Objects**
+
+RFID (Radio Frequency Identification) technology enables the identification and tracking of objects using radio waves. Initially conceptualized within the Auto-ID Center, RFID has evolved into a fundamental component of the Internet of Things (IoT).
+
+![](img/2024-06-28-21-06-07.png)
+
+**Key Concepts:**
+
+- **RFID Tags:** Simplified, low-cost, contactless smartcards containing a chip storing an ID number and attributes of the tagged object, along with an antenna for transmitting data to an RFID reader.
+
+- **RFID System Components:**
+  - **Readers:** Hardware devices that interact with RFID tags to read and write data.
+  - **Tags:** Devices attached to objects, categorized as active (with a battery), passive (powered by reader's signal), or semi-passive (activated by reader).
+
+- **Auto-ID Center:** A research federation pioneering networked RFID and sensing technologies, credited with coining the term "Internet of Things."
+
+- **EPC (Electronic Product Code):** Stored on RFID tags, used as an index to locate associated data stored in databases or on the EPCglobal network.
+
+- **Software and Middleware:** Facilitates communication between RFID hardware and enterprise systems, enhancing data management and integration capabilities.
+
+**Additional Concepts:**
+
+- **UPC and EAN:** Standards for identifying products in retail, with UPC prevalent in the US and EAN in Europe.
+
+- **Object Naming Service (ONS):** Similar to DNS for the Internet, it routes requests for information about EPCs between users and manufacturers.
+
+- **Java:** The programming language used for developing software specifications within the Auto-ID Center.
+
+- **Contactless Smart Cards and NFC:** Utilizes induction technology similar to RFID, enabling secure data transfer between chips and readers, popular in mobile payments (e.g., NFC-enabled mobile wallets).
+
+**Applications of RFID:**
+
+- **Agriculture:** Tracking livestock and monitoring crop conditions.
+- **Library Systems:** Managing and tracking books and other resources.
+- **Retail Sector:** Inventory management, anti-theft systems, and supply chain optimization.
