@@ -128,8 +128,7 @@ Machine-to-Machine (M2M) communication refers to direct communication between de
   2. **Application Development and Service Delivery:** Focuses on creating applications and services that leverage M2M connectivity for specific industry needs.
 
 
-
-**RFID: The Internet of Objects**
+# RFID: Radio Frequency Identification
 
 RFID (Radio Frequency Identification) technology enables the identification and tracking of objects using radio waves. Initially conceptualized within the Auto-ID Center, RFID has evolved into a fundamental component of the Internet of Things (IoT).
 
