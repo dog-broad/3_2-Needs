@@ -128,3 +128,34 @@ ISA-95 helps connect business and manufacturing systems smoothly, making operati
   - Object-oriented model encompassing data access, alarms/events, historical data, methods, and type systems.
 
 OPC UA improves how different systems work together securely, adding more features than typical SCADA systems.
+
+
+
+
+# Extensions of RFID Standards
+
+### CASAGRAS and CASAGRAS2 Projects
+CASAGRAS and CASAGRAS2 were projects aimed at advancing RFID technology within the framework of the Internet of Things (IoT). CASAGRAS started in 2009 and CASAGRAS2 continued from 2010 to 2012. They brought together international partners to address global RFID issues and support standards development for IoT applications.
+
+- **Improvements:**
+  - **Standardization:** Facilitated global collaboration on RFID standards, crucial for interoperability.
+  - **Research Basis:** Provided foundational studies aiding the development of RFID technologies within the IoT context.
+  - **International Coordination:** Fostered partnerships across Europe, the US, China, Japan, Brazil, and Korea to address global RFID challenges.
+
+### BRIDGE Project
+The BRIDGE project, funded by the EU, focused on overcoming barriers to RFID adoption in Europe. It extended EPCglobal standards, enhancing the infrastructure for RFID systems. A key aspect was its contribution to IoT-A, specifically through the Discovery Service, which enabled efficient data exchange among RFID nodes.
+
+- **Improvements:**
+  - **Extended Standards:** Enhanced EPCglobal standards to overcome barriers to RFID adoption in Europe.
+  - **IoT Integration:** Contributed to IoT-A by developing the Discovery Service, optimizing RFID data exchange among nodes.
+  - **EU Support:** Supported by EU funding, ensuring broad implementation and support within European regions.
+
+### Cross UBiQuitous Platform (CUBIQ) Project
+CUBIQ aimed to create a unified platform for context-aware applications using RFID technology. It involved nine organizations in Japan and emphasized seamless integration of data and services across diverse IoT architectures. Key components included mobile terminals equipped with RFID readers, a core infrastructure for data sharing, and systems for locating individuals or objects based on RFID tags.
+
+- **Improvements:**
+  - **Unified Platform:** Developed a cohesive platform for context-aware applications using RFID technology.
+  - **Data Integration:** Unified data access and processing across diverse IoT architectures, enhancing efficiency.
+  - **Location Services:** Enabled precise location estimation of individuals or objects through RFID tag information.
+  - **Standardization with USDL:** Utilized USDL for defining universal service models, promoting interoperability.
+
